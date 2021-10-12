@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Stellar Admin</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="../static/vendors/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="../static/vendors/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" href="../static/vendors/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <link rel="stylesheet" href="../static/vendors/daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" href="../static/vendors/chartist/chartist.min.css">
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="../static/css/style.css">
+    <!-- End layout styles -->
+    <link rel="shortcut icon" href="../static/images/favicon.png" />
+  </head>
+  <body>
+    <div class="container-scroller">
+      <!-- partial:partials/_navbar.html -->
+      <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+        <div class="navbar-brand-wrapper d-flex align-items-center">
+          <a class="navbar-brand brand-logo" href="/index">
+            <img src="../static/images/logo.svg" alt="logo" class="logo-dark" />
+          </a>
+          </div>
+        <div class="navbar-menu-wrapper d-flex align-items-center flex-grow-1">
+          <h2 class="mb-0 font-weight-medium d-none d-lg-flex" >Price Comparison For Products In Amazon & Flipkart</h2>
+          </button>
+        </div>
+      </nav>
+      <!-- partial -->
+      <div class="container-fluid page-body-wrapper">
+        <!-- partial:partials/_sidebar.html -->
+        <nav class="sidebar sidebar-offcanvas" id="sidebar">
+          <ul class="nav">
+
+
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+                <span class="menu-title">Mobiles</span>
+                <i class="icon-layers menu-icon"></i>
+              </a>
+              <div class="collapse" id="ui-basic">
+                <ul class="nav flex-column sub-menu">
+                  <form class="forms-sample" action="/price" method="post" enctype="multipart/form-data">
+
+                  <li class="nav-item"> <a class="nav-link" href="/index1">Price Comparision</a></li>
+                  </form>
+                  <li class="nav-item"> <a class="nav-link" href="/layout">Single</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <!-- partial -->
+        <div class="main-panel">
+          <div class="content-wrapper">
+            <div class="row purchace-popup">
+              <div class="card-body">
+                    <h4 class="card-title">Give the Mobile details to Find the price</h4>
+                    <form class="forms-sample" action="/single" method="post" enctype="multipart/form-data">
+                      <div class="form-group">
+                        <label for="exampleInputUsername1"> Mobile Name</label>
+                        <input type="text" name ="mobile" class="form-control" id="exampleInputUsername1" placeholder="Mobile Name">
+                      </div>
+                      <div class="form-group">
+                        <label >Color</label>
+                        <input type="text" name = "color" class="form-control" placeholder="color">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">RAM (GB)</label>
+                        <input type="number" name = "ram" class="form-control" id="exampleInputPassword1" placeholder="Only numbers">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputConfirmPassword1">Storage in (GB)</label>
+                        <input type="number" name ="storage" class="form-control" id="exampleInputConfirmPassword1" placeholder="Only numbers">
+                      </div>
+                      <button type="submit" class="btn btn-primary mr-2">Get</button>
+
+                    </form>
+                </br>
+                </br>
+                <h5 >{{ Predict}} </h5>
+                </br>
+                </br>
+                <h5 >{{ Predicted}} </h5>
+                </br>
+                </br>
+                <h3 >{{ Prediction}} </h3>
+                  </div>
+
+            </div>
+          <div>
+          </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- partial -->
+        </div>
+        <!-- main-panel ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="../static/vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <script src="../static/vendors/chart.js/Chart.min.js"></script>
+    <script src="../static/vendors/moment/moment.min.js"></script>
+    <script src="../static/vendors/daterangepicker/daterangepicker.js"></script>
+    <script src="../static/vendors/chartist/chartist.min.js"></script>
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="../static/js/off-canvas.js"></script>
+    <script src="../static/js/misc.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page -->
+    <script src="../static/js/dashboard.js"></script>
+    <!-- End custom js for this page -->
+  </body>
+</html>
