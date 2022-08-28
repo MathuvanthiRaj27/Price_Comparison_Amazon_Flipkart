@@ -67,7 +67,8 @@ def flipkart():
 
 
 def get_data_flip(pageNo,f_name):
-    url = "https://www.flipkart.com/search?q=" + f_name + "&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off&sort=popularity&page="
+    #url = "https://www.flipkart.com/search?q=" + f_name + "&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off&sort=popularity&page="
+    url = "https://www.flipkart.com/search?q=samsung&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"
     req = requests.get(f'{url}{str(pageNo)}')
     soup = BeautifulSoup(req.content, 'lxml')
     for main in soup.find_all("div", {"class": "_3pLy-c row"}):
